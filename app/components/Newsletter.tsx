@@ -6,22 +6,23 @@ import GlitchText from "./GlitchText";
 
 export default function Newsletter() {
   return (
-    <section className="relative py-24 px-6 md:px-20 z-10 flex justify-center">
+    <section className="relative py-24 px-4 md:px-20 z-10 flex justify-center">
       
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="glass-panel w-full max-w-3xl p-12 rounded-2xl flex flex-col items-center justify-center gap-8 relative overflow-hidden mx-auto"
+        
+        className="glass-panel w-full max-w-3xl p-6 md:p-12 rounded-2xl flex flex-col items-center justify-center gap-8 relative overflow-hidden mx-auto"
       >
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-gradient-to-b from-green-500/5 to-transparent pointer-events-none" />
 
-        <div className="relative z-10 max-w-lg mx-auto space-y-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-tech font-bold text-green-500 tracking-tight">
+        <div className="relative z-10 max-w-lg mx-auto space-y-4 text-center w-full">
           
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-tech font-bold text-green-500 tracking-tight break-words">
             <GlitchText text="REQUEST_EARLY_ACCESS" />
           </h2>
-          <p className="text-neutral-400 font-body text-sm">
+          <p className="text-neutral-400 font-body text-sm px-2">
             Join the closed beta channel. Secure your infrastructure before public release.
           </p>
         </div>
